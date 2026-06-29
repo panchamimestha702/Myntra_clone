@@ -1,108 +1,253 @@
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
 }
 
 nav{
-    height: 70px;
-    border: solid black;
-    display: flex;
-    align-items: center;
+    height:70px;
+    display:flex;
+    align-items:center;
 }
+
 .navbar section{
-    border: solid;
-    height: 100%;
-    display: grid;
-    place-items: center;
+    border:solid;
+    height:100%;
+    display:grid;
+    place-items:center;
 }
+
 .logo{
-    flex-basis: 10%;
-
+    flex-basis:10%;
 }
+
 .logo img{
-    height: 50px;
-    width: 50px;
+    height:50px;
+    width:50px;
 }
-.navigation{
-    flex-basis: 35%;
-}
-.navbar ul{
 
-    width: 100%;
-    list-style: none;
-    
+.navigation{
+    flex-basis:35%;
 }
+
+.navbar ul{
+    width:100%;
+    list-style:none;
+}
+
 .navbar ul,
 .navbar li,
-a{
-    height: inherit;
-     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+.navbar a{
+    height:inherit;
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
 }
+
 .navbar ul a{
-    text-decoration: none;
-    color: black;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: bolderl;
+    text-decoration:none;
+    color:black;
+    font-weight:700;
+    text-transform:uppercase;
+    font-size:14px;
 }
 
-li:hover a{
-    
-
-    /*padding-bottom: 20px;*/
-    border-bottom: 3px solid green;
+.navigation li:hover>a{
+    border-bottom:3px solid green;
 }
+
 .navigation article{
-    height: 300px;
-    width: 72%;
-    position: absolute;
-    border: solid;
-    top: 70px;
-    left: 170px;
-    display: none;
+    height:300px;
+    width:72%;
+    position:absolute;
+    border:solid;
+    top:70px;
+    left:170px;
+    display:none;
+    background:#fff;
 }
 
 .navigation li:hover article{
-    display: block;
+    display:block;
 }
-.search{
-    flex-basis: 40%;
-    article{
-        border: 1px solid;
-        height: 70%;
-        width: 80%;
-        padding: 5px;
-        display: flex;
-        align-items: center;
-        border-radius: 10px;
 
-    }
+
+
+.search{
+    flex-basis:40%;
 }
+
+.search article{
+    border:1px solid;
+    height:70%;
+    width:80%;
+    padding:5px;
+    display:flex;
+    align-items:center;
+    border-radius:10px;
+}
+
+.search button{
+    border:none;
+    background:none;
+    cursor:pointer;
+}
+
 .search input{
-    flex: basis 90%; 
-    height:100% ;
-    border: none;
-    outline: none;
-    border-radius: 10px;
+    flex:1;
+    height:100%;
+    border:none;
+    outline:none;
+    border-radius:10px;
+    padding-left:10px;
 }
+
 .search i{
-    flex-basis: 10%;
+    flex-basis:10%;
 }
+
+
+
 .profile{
-    flex-basis: 15%;
-    aside{
-        width: 100%;
-    }
-    ul{
-        width: 100%;
-    }
-    li{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+    flex-basis:15%;
+}
+
+.profile aside{
+    width:100%;
+}
+
+.profile ul{
+    width:100%;
+}
+
+.profile li{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+.profile p{
+    font-size:12px;
+}
+
+.banner{
+    margin-top:20px;
+}
+
+.banner img{
+    width:100%;
+    height:420px;
+    object-fit:cover;
+}
+
+
+
+.title{
+    text-align:center;
+    margin:30px 0;
+}
+
+
+
+.deals{
+    width:90%;
+    margin:30px auto;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.deal{
+    width:23%;
+    border:1px solid #ddd;
+    text-align:center;
+    padding:10px;
+    background:#fff;
+}
+
+.deal img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.deal h3{
+    margin:10px 0;
+}
+
+.price{
+    font-size:18px;
+    font-weight:bold;
+}
+
+.price span{
+    color:gray;
+    text-decoration:line-through;
+}
+
+.offer{
+    color:red;
+    font-weight:bold;
+}
+
+
+footer{
+    width:100%;
+    background:#282c3f;
+    color:#fff;
+    margin-top:40px;
+    padding:30px;
+}
+
+.footer{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+}
+
+.footer h3{
+    margin-bottom:15px;
+}
+
+.footer p{
+    margin:8px 0;
+}
+
+.footer i{
+    font-size:22px;
+    margin-right:10px;
+}
+
+.copy{
+    text-align:center;
+    margin-top:20px;
+}
+
+
+
+@media(max-width:768px){
+
+.deals,
+.categories,
+.brands{
+    flex-direction:column;
+    align-items:center;
+}
+
+.deal,
+.category,
+.brand{
+    width:90%;
+}
+
+.footer{
+    flex-direction:column;
+    gap:30px;
+    text-align:center;
+}
+
 }
