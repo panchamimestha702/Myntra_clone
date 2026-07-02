@@ -153,29 +153,33 @@ nav{
 
 .deals{
     width:90%;
-    margin:30px auto;
+    margin:auto;
     display:flex;
     justify-content:space-between;
     flex-wrap:wrap;
-    gap:20px;
 }
 
 .deal{
-    width:23%;
+    width:21%;
     border:1px solid #ddd;
     text-align:center;
-    padding:10px;
+    padding: 10px;
     background:#fff;
 }
 
+.deal:hover{
+    transform:translateY(-5px);
+    box-shadow:0 1px 5px rgba(0,0,0,.2);
+}
+
+
 .deal img{
     width:100%;
-    height:350px;
-    object-fit:cover;
+    height:220px;
 }
 
 .deal h3{
-    margin:10px 0;
+    margin: 8px 0;
 }
 
 .price{
@@ -241,12 +245,12 @@ footer{
 .deal,
 .category,
 .brand{
-    width:90%;
+    width:50%;
 }
 
 .footer{
     flex-direction:column;
-    gap:30px;
+    gap:10px;
     text-align:center;
 }
 
