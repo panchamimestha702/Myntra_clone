@@ -216,6 +216,9 @@ nav{
 .deals{
     padding:40px;
 }
+.deals{
+    display:flex;
+}
 
 .deals{
     width:90%;
@@ -232,7 +235,11 @@ nav{
     padding: 10px;
     background:#fff;
 }
-
+.deal-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
 .deal:hover{
     transform:translateY(-5px);
     box-shadow:0 1px 5px rgba(0,0,0,.2);
@@ -298,7 +305,7 @@ footer{
 
 
 
-@media (max-width:300px){
+@media (max-width:768px){
 
 .logo{
     flex-basis:20%;
@@ -327,7 +334,7 @@ footer{
 }
 
 .offer-box img{
-    width:100%;
+    width:90%;
     max-width:350px;
 }
 
