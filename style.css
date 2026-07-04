@@ -142,14 +142,80 @@ nav{
     object-fit:cover;
 }
 
+.offers{
+    padding:40px;
+}
 
+.offers h2{
+    margin-bottom:20px;
+    color:#3e4152;
+}
 
-.title{
+.offer-box{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.offer-box img{
+    width:220px;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.offer-box img:hover{
+    transform:scale(1.05);
+}
+.categories{
+    padding:40px;
+}
+
+.categories h2{
+    margin-bottom:20px;
+    color:#3e4152;
+}
+
+.category-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#fff;
+    border-radius:10px;
+    overflow:hidden;
     text-align:center;
-    margin:30px 0;
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+}
+
+.card h3{
+    margin:10px 0;
+}
+
+.card p{
+    color:#ff3f6c;
+    margin-bottom:15px;
+    font-weight:bold;
 }
 
 
+
+.deals{
+    padding:40px;
+}
 
 .deals{
     width:90%;
@@ -196,7 +262,6 @@ nav{
     color:red;
     font-weight:bold;
 }
-
 
 footer{
     width:100%;
@@ -245,7 +310,7 @@ footer{
 .deal,
 .category,
 .brand{
-    width:50%;
+    width:70%;
 }
 
 .footer{
